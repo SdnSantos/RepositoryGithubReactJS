@@ -10,7 +10,7 @@ export default function Routes() {
       {/* Switch faz com que seja permitido chamar uma rota por vez */}
       <Switch>
         <Route path="/" exact component={Main} />
-        <Route path="/repository" component={Repository} />
+        <Route path="/repository/:repository" component={Repository} />
       </Switch>
     </BrowserRouter>
   );
