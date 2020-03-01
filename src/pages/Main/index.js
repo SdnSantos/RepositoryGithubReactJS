@@ -79,7 +79,7 @@ export default class Main extends Component {
           />
 
           {/* condição através do estado dentro do React */}
-          <SubmitButton loading={loading}>
+          <SubmitButton loading={loading ? 1 : 0}>
             {loading ? (
               <FaSpinner color="#FFF" size={14} />
             ) : (
